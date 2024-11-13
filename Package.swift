@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "PINOperation",
+    name: "HHPPINOperation",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "PINOperation", targets: ["PINOperation"]),
+        .library(name: "HHPPINOperation", targets: ["HHPPINOperation"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "PINOperation", 
+            name: "HHPPINOperation", 
             path: "Source", 
             publicHeadersPath: ".",
             cSettings: [
@@ -21,8 +21,8 @@ let package = Package(
             ]),
 
         .testTarget(
-            name: "PINOperationTests", 
-            dependencies: ["PINOperation"], 
+            name: "HHPPINOperationTests", 
+            dependencies: ["HHPPINOperation"], 
             path: "Tests")
     ]
 )
